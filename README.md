@@ -26,7 +26,7 @@ Operation
 
 Run the program from the root of the repository:
 
-    node pi-suite
+    sudo node pi-suite
 
 (This step is also fully documented in the [tutorial](http://reelyactive.github.io/make-a-pi-hub.html))
 
