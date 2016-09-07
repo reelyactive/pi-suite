@@ -7,21 +7,25 @@ var server = require('hlc-server');
 
 
 // User-configurable: port and password
-var options = { httpPort: 80, password: "admin" };
+var options = { httpPort: 80, password: "admin", useCors: true };
 
 // See hlc-server documentation for additional options
 var app = new server(options);
  
-// Expect a BLE-capable Raspberry Pi, listen on the integrated radio
+// OPTIONAL: Expect a BLE-capable Raspberry Pi, listen on the integrated radio
 app.bind( { protocol: "hci", path: null } );
 
-// Output event stream via socket.io
-app.addNotificationService( { service: "websocket", namespace: "/events" } );
+// OPTIONAL: Listen for a reelyActive starter kit on the USB port
+//app.bind( { protocol: "serial", path: "auto" } );
 
-// Log the events to file
-app.addNotificationService( { service: "logfile", logfileName: "eventlog" } );
+// OPTIONAL: Forward the event stream to Pareto
+//app.addNotificationService( { service: "barnaclesrest",
+//                              hostname: "pareto.reelyactive.com" } );
+
+// OPTIONAL: Log the events to file
+//app.addNotificationService( { service: "logfile", logfileName: "eventlog" } );
 
 // Friendly console message of what to do next
-console.log('\r\nBrowse to http://localhost and query the receiver id of your Pi,\r\nwhich should be listed below.\r\n');
+console.log('\r\nThe receiver id of your Pi should be listed below.\r\nBrowse to your Pi via its IP address, for instance http://127.0.0.1');
 
 
