@@ -3,5 +3,5 @@ xset -dpms     # disable DPMS (Energy Star) features.
 xset s off     # disable screen saver
 xset s noblank # don't blank the video device
 matchbox-window-manager -use_titlebar no &
-WEBKIT_DISABLE_TBS=1 epiphany-browser -a --profile /home/pi/.config --display=:0 http://localhost
+WEBKIT_DISABLE_TBS=1 epiphany-browser -a --profile /home/pi/.config --display=:0 http://localhost/bubblescape
 
