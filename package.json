@@ -1,6 +1,6 @@
 {
   "name": "pi-suite",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Our full open source software suite tailored for the Raspberry Pi. We believe in an open Internet of Things.",
   "main": "pi-suite.js",
   "scripts": {
