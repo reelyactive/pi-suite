@@ -25,7 +25,18 @@ app.bind( { protocol: "hci", path: null } );
 // OPTIONAL: Log the events to file
 //app.addNotificationService( { service: "logfile", logfileName: "eventlog" } );
 
-// Friendly console message of what to do next
-console.log('\r\nThe receiver id of your Pi should be listed below.\r\nBrowse to your Pi via its IP address, for instance http://127.0.0.1');
+// Friendly console message of the IP address(es) of the Pi
+var networkInterfaces = os.networkInterfaces();
+console.log('\r\n*******************************************');
+if(networkInterfaces.hasOwnProperty('wlan0')) {
+  console.log('Browse to your Pi at http://' +
+              networkInterfaces.wlan0[0].address);
+}
+if(networkInterfaces.hasOwnProperty('eth0')) {
+  console.log('Browse to your Pi at http://' +
+              networkInterfaces.eth0[0].address);
+}
+console.log('*******************************************\r\n');
+
 
 
