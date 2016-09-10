@@ -4,6 +4,7 @@
  */
 
 var server = require('hlc-server');
+var os = require('os');
 
 
 // User-configurable: port and password
