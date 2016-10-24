@@ -25,7 +25,7 @@ app.addNotificationService( { service: "barnaclesrest",
 
 // Friendly console message of the IP address(es) of the Pi
 var networkInterfaces = os.networkInterfaces();
-console.log('\r\n*******************************************');
+console.log('\r\n*************************************************************');
 if(networkInterfaces.hasOwnProperty('wlan0')) {
   console.log('Browse to your Pi at http://' +
               networkInterfaces.wlan0[0].address);
@@ -35,7 +35,7 @@ if(networkInterfaces.hasOwnProperty('eth0')) {
               networkInterfaces.eth0[0].address);
 }
 console.log('Visit your Pareto dashboard at https://pareto.reelyactive.com');
-console.log('*******************************************\r\n');
+console.log('*************************************************************\r\n');
 
 
 
