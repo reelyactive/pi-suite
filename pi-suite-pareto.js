@@ -1,5 +1,5 @@
 /*
- * Copyright reelyActive 2016
+ * Copyright reelyActive 2016-2017
  * We believe in an open Internet of Things
  */
 
@@ -36,6 +36,3 @@ if(networkInterfaces.hasOwnProperty('eth0')) {
 }
 console.log('Visit your Pareto dashboard at https://pareto.reelyactive.com');
 console.log('*************************************************************\r\n');
-
-
-

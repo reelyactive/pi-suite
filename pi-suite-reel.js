@@ -13,14 +13,8 @@ var options = { httpPort: 80, password: "admin", useCors: true };
 // See hlc-server documentation for additional options
 var app = new server(options);
  
-// OPTIONAL: Expect a BLE-capable Raspberry Pi, listen on the integrated radio
-app.bind( { protocol: "hci", path: null } );
-
-// OPTIONAL: Listen for a reelyActive starter kit on the USB port
-//app.bind( { protocol: "serial", path: "auto" } );
-
-// OPTIONAL: Listen for reelceivers on a Reel-Pi HAT
-//app.bind( { protocol: "serial", path: "/dev/serial0" } );
+// Listen for reelceivers on a Reel-Pi HAT
+app.bind( { protocol: "serial", path: "/dev/serial0" } );
 
 // OPTIONAL: Forward the event stream to Pareto
 //app.addNotificationService( { service: "barnaclesrest",
