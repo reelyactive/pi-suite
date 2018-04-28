@@ -1,6 +1,6 @@
 {
   "name": "pi-suite",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "description": "Our full open source software suite tailored for the Raspberry Pi. We believe in an open Internet of Things.",
   "main": "pi-suite.js",
   "scripts": {
@@ -19,7 +19,7 @@
     "Hackaday"
   ],
   "dependencies": {
-    "hlc-server": ">=0.5.16",
+    "hlc-server": ">=0.5.19",
     "bluetooth-hci-socket": ">=0.5.0",
     "serialport": ">=4.0.0"
   },
