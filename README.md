@@ -2,13 +2,13 @@ pi-suite
 ========
 
 
-![pi-relay](http://reelyactive.github.io/images/hackaday-pi-ble.jpg)
+![pi-relay](https://reelyactive.github.io/images/hackaday-pi-ble.jpg)
 
 
 Prerequisites
 -------------
 
-You will require a [Raspberry Pi](https://www.raspberrypi.org) with integrated Bluetooth Low Energy radio (Pi version 3 and greater).  See our [Make a Raspberry Pi Hub](http://reelyactive.github.io/make-a-pi-hub.html) tutorial for detailed step-by-step instructions.
+You will require a [Raspberry Pi](https://www.raspberrypi.org) with integrated Bluetooth Low Energy radio (Pi version 3 and greater).  See our [Make a Raspberry Pi Hub](https://reelyactive.github.io/make-a-pi-hub.html) tutorial for detailed step-by-step instructions.
 
 
 Installation
@@ -18,7 +18,7 @@ Clone the repo.
 
     npm install
 
-(This step is fully documented in the [tutorial](http://reelyactive.github.io/make-a-pi-hub.html))
+(This step is fully documented in the [tutorial](https://reelyactive.github.io/make-a-pi-hub.html))
 
 
 Operation
@@ -28,7 +28,7 @@ Run the program from the root of the repository:
 
     sudo node pi-suite
 
-(This step is also fully documented in the [tutorial](http://reelyactive.github.io/make-a-pi-hub.html))
+(This step is also fully documented in the [tutorial](https://reelyactive.github.io/make-a-pi-hub.html))
 
 
 How do I know it's working?
@@ -42,7 +42,7 @@ License
 
 MIT License
 
-Copyright (c) 2016 reelyActive
+Copyright (c) 2016-2018 reelyActive
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
