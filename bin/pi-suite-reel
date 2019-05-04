@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+
+const HLCServer = require('hlc-server');
+const BarnowlReel = require('barnowl-reel');
+
+const options = {
+    barnowl: { enableMixing: true },
+    barnacles: {}
+};
+
+let app = new HLCServer(options);
+
+app.addListener(BarnowlReel, {}, BarnowlReel.SerialListener,
+                { path: "/dev/serial0" });
