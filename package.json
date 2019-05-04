@@ -1,0 +1,37 @@
+{
+  "name": "pi-suite",
+  "homepage": "https://github.com/reelyactive/pi-suite/",
+  "author": {
+    "name": "reelyActive",
+    "email": "info@reelyactive.com"
+  },
+  "description": "Our full open source software suite tailored for the Raspberry Pi. We believe in an open Internet of Things.",
+  "keywords": [
+    "reelyActive",
+    "Raspberry Pi",
+    "IoT",
+    "RTLS",
+    "BLE",
+    "Hackaday"
+  ],
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "start": "node bin/pi-suite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reelyactive/pi-suite.git"
+  },
+  "dependencies": {
+    "hlc-server": "^1.0.7",
+    "bluetooth-hci-socket": ">=0.5.0",
+    "serialport": ">=7.0.0"
+  },
+  "contributors": [
+    { "name": "Jeffrey Dungen" }
+  ],
+  "license": "MIT"
+}

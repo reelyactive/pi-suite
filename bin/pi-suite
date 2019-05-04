@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+const HLCServer = require('hlc-server');
+
+const options = {
+    barnowl: { enableMixing: true },
+    barnacles: {}
+};
+
+let app = new HLCServer(options);
