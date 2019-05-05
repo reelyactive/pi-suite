@@ -14,10 +14,21 @@ Our open source software has evolved since the Hackaday article:
 - __Version 0.x__ which was featured in the article can be found in the [release-0.2 branch](https://github.com/reelyactive/pi-suite/tree/release-0.2) and is considered legacy
 
 
-Installation
-------------
+Install and Run
+---------------
 
-See our [Prepare a Raspberry Pi from scratch tutorial](https://reelyactive.github.io/diy/pi-prep/).
+Follow our step-by-step tutorials to prepare a Pi from scratch and install pi-suite:
+- [Prepare a Raspberry Pi from scratch](https://reelyactive.github.io/diy/pi-prep/)
+- [Install our open source software suite on a Pi](https://reelyactive.github.io/diy/pi-suite/)
+
+_Alternatively_, if all prerequisites are indeed in place, getting up and running for the first time should be as easy as:
+
+```
+git clone https://github.com/reelyactive/pi-suite.git
+cd pi-suite
+npm install
+npm start
+```
 
 
 License
