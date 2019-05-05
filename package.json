@@ -1,15 +1,11 @@
 {
   "name": "pi-suite",
-  "version": "0.2.9",
+  "homepage": "https://github.com/reelyactive/pi-suite/",
+  "author": {
+    "name": "reelyActive",
+    "email": "info@reelyactive.com"
+  },
   "description": "Our full open source software suite tailored for the Raspberry Pi. We believe in an open Internet of Things.",
-  "main": "pi-suite.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/reelyactive/pi-suite.git"
-  },
   "keywords": [
     "reelyActive",
     "Raspberry Pi",
@@ -18,10 +14,22 @@
     "BLE",
     "Hackaday"
   ],
+  "version": "1.0.1",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "start": "node bin/pi-suite",
+    "start-reel": "node bin/pi-suite-reel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reelyactive/pi-suite.git"
+  },
   "dependencies": {
-    "hlc-server": "^0.5.21",
+    "hlc-server": "^1.0.7",
     "bluetooth-hci-socket": ">=0.5.0",
-    "serialport": ">=4.0.0"
+    "serialport": ">=7.0.0"
   },
   "contributors": [
     { "name": "Jeffrey Dungen" }
