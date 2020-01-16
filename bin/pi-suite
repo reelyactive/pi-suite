@@ -4,7 +4,7 @@ const HLCServer = require('hlc-server');
 
 const options = {
     barnowl: { enableMixing: true },
-    barnacles: {}
+    barnacles: { acceptStaleRaddecs: true }
 };
 
 let app = new HLCServer(options);
