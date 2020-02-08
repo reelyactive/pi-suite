@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+
+const HLCServer = require('hlc-server');
+const BarnowlHci = require('barnowl-hci');
+
+const options = {
+    barnowl: { enableMixing: true },
+    barnacles: { acceptStaleRaddecs: true }
+};
+
+let app = new HLCServer(options);
+
+app.addListener(BarnowlHci, {}, BarnowlHci.SocketListener, {});

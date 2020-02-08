@@ -5,7 +5,7 @@
     "name": "reelyActive",
     "email": "info@reelyactive.com"
   },
-  "description": "Our full open source software suite tailored for the Raspberry Pi. We believe in an open Internet of Things.",
+  "description": "The Pareto Anywhere open source software suite tailored for the Raspberry Pi. We believe in an open Internet of Things.",
   "keywords": [
     "reelyActive",
     "Raspberry Pi",
@@ -20,6 +20,7 @@
   },
   "scripts": {
     "start": "node bin/pi-suite",
+    "start-hci": "node bin/pi-suite-hci",
     "start-reel": "node bin/pi-suite-reel"
   },
   "repository": {
@@ -27,8 +28,8 @@
     "url": "https://github.com/reelyactive/pi-suite.git"
   },
   "dependencies": {
-    "hlc-server": "^1.0.7",
-    "@abandonware/bluetooth-hci-socket": "~0.5.3-3",
+    "hlc-server": "^1.0.19",
+    "barnowl-hci": "^0.2.1",
     "serialport": ">=7.0.0"
   },
   "contributors": [
