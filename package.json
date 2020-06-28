@@ -14,7 +14,7 @@
     "BLE",
     "Hackaday"
   ],
-  "version": "1.0.3",
+  "version": "1.0.4",
   "engines": {
     "node": ">=6.0.0"
   },
@@ -28,9 +28,9 @@
     "url": "https://github.com/reelyactive/pi-suite.git"
   },
   "dependencies": {
-    "hlc-server": "^1.0.19",
+    "hlc-server": "^1.0.22",
     "barnowl-hci": "^0.2.1",
-    "serialport": ">=7.0.0"
+    "serialport": ">=9.0.0"
   },
   "contributors": [
     { "name": "Jeffrey Dungen" }
