@@ -6,7 +6,6 @@ After=network.target
 WorkingDirectory=/home/pi/reelyActive/pi-suite
 ExecStart=/usr/local/node/bin/node bin/pi-suite-hci
 Restart=on-failure
-User=pi
 Environment=PORT=3001
 
 [Install]
